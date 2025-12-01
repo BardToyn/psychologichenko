@@ -1,0 +1,57 @@
+@import url(./normalize.css);
+@import url(./stylesheet.css);
+@import url(./header.css);
+@import url(./footer.css);
+
+:root {
+    --clr-black: #333333;
+    --clr-green: #244D00;
+    --clr-green-light: #244D0060;
+    --clr-white: #fff;
+
+    --bor-radius-xl: 44px;
+    --bor-radius-l: 22px;
+    --bor-radius-m: 18px;
+    --bor-radius-s: 10px;
+}
+
+body {
+    font-family: 'Inter';
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    box-sizing: border-box;
+}
+
+.section__title {
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -4%;
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .section__title {
+        font-size: 34px;
+    }
+
+}
